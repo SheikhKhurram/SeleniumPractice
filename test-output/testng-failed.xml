@@ -3,11 +3,22 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="BrokenLinks.CheckingBrokenLinks">
         <methods>
           <include name="checkBrokenLinks"/>
         </methods>
       </class> <!-- BrokenLinks.CheckingBrokenLinks -->
+=======
+      <class name="TestNGRScreenShot.TakingScreenShotFailedTestcase">
+        <methods>
+          <include name="takeScreenShot2"/>
+          <include name="tearDown"/>
+          <include name="takeScreenShot3"/>
+          <include name="takescreenShot1"/>
+        </methods>
+      </class> <!-- TestNGRScreenShot.TakingScreenShotFailedTestcase -->
+>>>>>>> caef7b625040f2498bef7377cf0d71819738ca49
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
