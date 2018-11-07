@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Basics._11DyanicSearchGoogle">
+      <class name="TestNGRScreenShot.TakingScreenShotFailedTestcase">
         <methods>
-          <include name="dynamicSearch"/>
+          <include name="takeScreenShot2"/>
+          <include name="tearDown"/>
+          <include name="takeScreenShot3"/>
+          <include name="takescreenShot1"/>
         </methods>
-      </class> <!-- Selenium_Basics._11DyanicSearchGoogle -->
+      </class> <!-- TestNGRScreenShot.TakingScreenShotFailedTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
