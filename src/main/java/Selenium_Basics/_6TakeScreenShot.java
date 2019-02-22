@@ -15,6 +15,7 @@ public class _6TakeScreenShot
    @Test
    public void takeScreenShot() throws IOException
    {
+	   
 	   System.setProperty("webdriver.chrome.driver" , "D:\\SeleniumJar\\Chorme.exe\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
@@ -23,6 +24,7 @@ public class _6TakeScreenShot
 		File file =  ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		
 		FileHandler.copy(file, new File ("C:\\Users\\khurram\\eclipse-workspace\\Selenium_practice\\src\\main\\java\\Selenium_Basics\\google.png"));
+		
 		
    }
 }

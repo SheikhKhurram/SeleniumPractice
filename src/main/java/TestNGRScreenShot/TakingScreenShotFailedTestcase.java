@@ -15,7 +15,7 @@ public class TakingScreenShotFailedTestcase extends Base
 	public void takescreenShot1()
 	{
 		initilazation();
-		Assert.assertEquals(true, false);
+		Assert.assertEquals(true, true);
 	}
 	
 	@Test

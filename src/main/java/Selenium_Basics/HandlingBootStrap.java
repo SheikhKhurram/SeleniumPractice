@@ -14,7 +14,7 @@ public class HandlingBootStrap
      @Test
      public void handlingBootStarp()
      {
-    	 System.setProperty("webdriver.chrome.driver" , "D:\\SeleniumJar\\Chorme.exe\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver" , "D:\\SeleniumJar\\Chorme.exe\\chromedriver.exe");
  		
  		WebDriver driver = new ChromeDriver();
  		
@@ -27,7 +27,7 @@ public class HandlingBootStrap
  		
  		driver.findElement(By.xpath("//button[@type='button']")).click();
  		
- 		 List<WebElement> list=driver.findElements(By.xpath("//ul[@class = 'multiselect-container dropdown-menu']//li//a//label//input"));
+ 	    List<WebElement> list=driver.findElements(By.xpath("//ul[@class = 'multiselect-container dropdown-menu']//li//a//label//input"));
  		
  		/* for (WebElement ele : list)
  		 {

@@ -1,0 +1,23 @@
+IRetry logic used to execute the failed testcases again 
+
+We can achieve this at test level or at runtime 
+
+Runtime is recomended 
+
+At testLevel 
+	Create testclass 
+		In this set @Test(retryAnalizer = className)
+	Create retry class 
+		Create another class which implements IRetryAnalyzer and override "retry(ITestResult result)" method
+
+
+At runtime 
+	Create testclass 
+		It's normal testcases 
+	Create retry class 
+		As mentioned above 
+	Create transform class 
+		transform class implements IAnnotationTransformer and override the method transform method 
+		and call using annotation reference variable annotation.setRetryAnalyzer(call the retryclass)
+		
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="RetryLogicTestNG.transform"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="sendkeys" value="gg"/>
+    <parameter name="url" value="http://www.google.com"/>
+    <classes>
+      <class name="Log4jPractice.LoginToFreeCrm">
+        <methods>
+          <include name="loginPage"/>
+          <include name="teardown"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- Log4jPractice.LoginToFreeCrm -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

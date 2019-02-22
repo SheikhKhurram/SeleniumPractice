@@ -26,8 +26,9 @@ public class Base {
 	          try {
 				FileHandler.copy(scrFile, new File ("C:\\Users\\khurram\\eclipse-workspace\\Selenium_practice\\src\\main\\java"
 						+ "\\TestNGRScreenShot\\ScreenShot\\" +""+methodName+"" + ".jpg"));
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			} 
+	          catch (IOException e) 
+	          {
 				e.printStackTrace();
 			}
 	}

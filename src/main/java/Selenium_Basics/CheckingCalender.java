@@ -14,7 +14,8 @@ public class CheckingCalender
 
 	static Select select;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		String date = "31-11-2018";
 		choosingDate(date);
 
@@ -22,7 +23,7 @@ public class CheckingCalender
 
 	public static void choosingDate(String date) {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\SeleniumJar\\Chorme.exe\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 

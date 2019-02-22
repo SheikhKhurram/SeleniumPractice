@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Login">
+ 
+ <listeners>
+       <listener class-name="RetryLogicTestNG.transform"> </listener>
+ </listeners>
+ 
+  <test thread-count="5" name="Test">
   
-  <parameter name = "url" value ="https://www.facebook.com" />
-  <parameter name = "userName"  value = "Test@gmail.com" />
-   
-   
+     <parameter name="url" value="http://www.google.com"></parameter>
+   <parameter name="userName" value="gg"></parameter>
+    
+  
+    
     <classes>
-      <class name="TestNGFeatures.ParametersTestNG"/>
+      <class name="Log4jPractice.LoginToFreeCrm"/>
     </classes>
+    
   </test> <!-- Test -->
 </suite> <!-- Suite -->

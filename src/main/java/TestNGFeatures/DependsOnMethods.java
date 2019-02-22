@@ -1,5 +1,6 @@
 package TestNGFeatures;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class DependsOnMethods 
@@ -8,13 +9,13 @@ public class DependsOnMethods
            public void test1() 
            {
         	   
-        	   System.out.println("Test2 method");
+        	   System.out.println("Test1 method");
            }
            
            @Test(groups = "Homepage" , priority = 1) 
            public void test2()
            {
-        	   System.out.println(10/0);
+        	   Assert.assertTrue(false);
            }
            
            @Test(groups = "Homepage", priority = 2) 
@@ -31,6 +32,11 @@ public class DependsOnMethods
            }
            
            
+           @Test(dependsOnMethods = "test4" , priority = 4)
+           public void test5()
+           {
+        	   System.out.println("dependsOnMethod");
+           }
            
            
 }

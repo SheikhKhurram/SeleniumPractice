@@ -22,6 +22,7 @@ public class Annotations
 	
 	@BeforeTest
 	public void launching()
+	
 	{
 		System.out.println("Launching browser");
 	}
@@ -54,6 +55,7 @@ public class Annotations
 	public void deleteAllCookies()
 	{
 		System.out.println("deleting all cookies");
+
 	}
 	
 	@AfterTest
