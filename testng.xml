@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<<<<<<< HEAD
  
  <listeners>
        <listener class-name="RetryLogicTestNG.transform"> </listener>
  </listeners>
  
   <test thread-count="5" name="Test">
+=======
+<<<<<<< HEAD
+  
+  <listeners> 
+  <listener class-name="Analyzer.AnnotationTranform">
+  </listener>
+  </listeners>
+  
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="RetryAnalyzerLogic.TestCase"/>
+=======
+  <test thread-count="5" name="Login">
+>>>>>>> d42a78aff79290cb51ee335bacc593a501eca886
   
      <parameter name="url" value="http://www.google.com"></parameter>
    <parameter name="userName" value="gg"></parameter>
@@ -14,7 +29,12 @@
   
     
     <classes>
+<<<<<<< HEAD
       <class name="Log4jPractice.LoginToFreeCrm"/>
+=======
+      <class name="TestNGFeatures.ParametersTestNG"/>
+>>>>>>> caef7b625040f2498bef7377cf0d71819738ca49
+>>>>>>> d42a78aff79290cb51ee335bacc593a501eca886
     </classes>
     
   </test> <!-- Test -->

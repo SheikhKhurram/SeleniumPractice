@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="RetryLogicTestNG.transform"/>
@@ -15,6 +16,20 @@
           <include name="setUP"/>
         </methods>
       </class> <!-- Log4jPractice.LoginToFreeCrm -->
+=======
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Analyzer.AnnotationTranform"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="RetryAnalyzerLogic.TestCase">
+        <methods>
+          <include name="test2"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- RetryAnalyzerLogic.TestCase -->
+>>>>>>> d42a78aff79290cb51ee335bacc593a501eca886
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
